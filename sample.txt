@@ -11,16 +11,11 @@ void Main()
     
     //what should be done in program to pass this test? Do not change the row order ;)
     result.ShouldEqual(0);
-    
 }
-
-
 ------------------------------------------------------
-
 void Main()
 
 {   
-
     var result = 0;          
 
     Action<Action> repeat = (f) => Enumerable.Range(0, 1000000).ToList().ForEach(_=> f());
@@ -29,18 +24,9 @@ void Main()
 
     var decrementTask = Task.Run(()=>repeat(() => Interlocked.Decrement(ref result)));
 
-         
-
     incrementTask.Wait();   
 
     decrementTask.Wait();   
 
     result.Dump(); // 0
-
 }
-
-
-	
-------------------------------------------------------
-	
-	
