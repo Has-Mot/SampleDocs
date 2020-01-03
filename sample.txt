@@ -11,6 +11,7 @@ void Main()
     
     //what should be done in program to pass this test? Do not change the row order ;)
     result.ShouldEqual(0);
+    
 }
 
 
