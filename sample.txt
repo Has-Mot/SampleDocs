@@ -26,6 +26,5 @@ void Main()
     incrementTask.Wait();   
 
     decrementTask.Wait();   
-
     result.Dump(); // 0
 }
